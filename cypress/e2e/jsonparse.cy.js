@@ -23,7 +23,7 @@ it("demo loop",()=>{
             
         });
         expect(total).to.eq(899.23)
-        
+        expect(res.body[0].title).to.eq("Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops")
     })
 })
 })
