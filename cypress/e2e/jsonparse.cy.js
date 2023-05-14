@@ -1,10 +1,14 @@
 /// <reference types="Cypress"/>
 
 describe("JSON Parse",()=>{
+    it("demo",()=>{
+
+    
     cy.request({
-        method:"GET",
+        method:'GET',
         url:'https://fakestoreapi.com/products'
-    }).then((result)=>{
-        expect(result.status).to.equal(200)
+    }).then((res)=>{
+        expect(res.status).to.eq(200)
     })
+})
 })
